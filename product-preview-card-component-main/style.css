@@ -1,0 +1,131 @@
+.perfume-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+    border: 1px solid rgba(7,7,7,0.1);
+    border-radius: 10px;
+}
+
+
+.perfume-img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.perfume__info {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+.perfume-container .perfume__info .p__subtitulo {
+    letter-spacing: 2.5px;
+    opacity: .5;
+    font-size: .78em;
+    height: 5%;
+}
+
+.perfume-container .perfume__info .h2__nombre {
+    font-size: 1.7em;
+    height: 25%;
+}
+
+.perfume-container .perfume__info .p__descripcion {
+    opacity: .7;
+    height: 30%;
+}
+
+.perfume-container .perfume__info .precios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+}
+
+.perfume-container .perfume__info .precios .nuevo__precio {
+    font-size: 2em;
+    color: rgb(19, 140, 71);
+    font-weight: bolder;
+}
+
+.perfume-container .perfume__info .precios .viejo__precio {
+    opacity: 0.6;
+    margin-left: 10px;
+}
+
+.perfume-container .perfume__info .addCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+}
+
+.perfume-container .perfume__info button{
+    padding: .6em 2.4em;
+    border-radius: 7px;
+    background-color: rgb(19, 140, 71);
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    width: 80%;
+}
+
+.perfume-container .perfume__info button:hover {
+    
+    background-color: rgb(18, 71, 41);
+}
+
+.perfume-container .perfume__info button img {
+    width: 12px;
+    padding-right: 5px;
+    
+}
+
+
+@media screen and (max-width: 1170px) {
+.perfume-container {
+    grid-template-columns: 1fr;
+    grid-template-rows:300px 1fr;
+    width: 60%;
+    height: 50%;
+ }   
+
+ .perfume-img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px 10px 5px 5px;
+}
+
+}
+
+
+@media screen  and (max-width: 600px){
+    .perfume__info {
+        height: 100%;
+    }
+    
+    .perfume-container .perfume__info .p__subtitulo {
+        height: 2%;
+    }
+    
+    .perfume-container .perfume__info .h2__nombre {
+        height: 20%;
+    }
+    
+    .perfume-container .perfume__info .p__descripcion {
+        height: 20%;
+    }
+    
+    .perfume-container .perfume__info .precios {
+        height: 20%;
+    }
+
+    .perfume-container .perfume__info .addCart {
+        height: 15%;
+    
+    }
+}
